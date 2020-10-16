@@ -48,6 +48,7 @@ from torch import nn
 
 def MLP(channels: list, do_bn=True):
     """ Multi-layer perceptron """
+    import ipdb; ipdb.set_trace()
     n = len(channels)
     layers = []
     for i in range(1, n):
@@ -244,6 +245,7 @@ class SuperGlue(nn.Module):
         kpts1 = normalize_keypoints(kpts1, data['image1'].shape)
 
         # Keypoint MLP encoder.
+        import ipdb; ipdb.set_trace()
         desc0 = desc0 + self.kenc(kpts0, data['scores0'])
         desc1 = desc1 + self.kenc(kpts1, data['scores1'])
 

@@ -95,14 +95,14 @@ if __name__ == '__main__':
         help='SuperGlue weights')
     parser.add_argument(
         '--max_keypoints', type=int, default=1024,
-        help='Maximum number of keypoints detected by Superpoint'
+        help='Maximum number of keypoints detected by Superpoint' #Not needed?
              ' (\'-1\' keeps all keypoints)')
     parser.add_argument(
         '--keypoint_threshold', type=float, default=0.005,
-        help='SuperPoint keypoint detector confidence threshold')
+        help='SuperPoint keypoint detector confidence threshold') #Not needed?
     parser.add_argument(
         '--nms_radius', type=int, default=4,
-        help='SuperPoint Non Maximum Suppression (NMS) radius'
+        help='SuperPoint Non Maximum Suppression (NMS) radius' #Not needed?
         ' (Must be positive)')
     parser.add_argument(
         '--sinkhorn_iterations', type=int, default=20,
